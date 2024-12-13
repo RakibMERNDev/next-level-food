@@ -5,14 +5,14 @@ import styles from './main-header.module.css'
 
 const MainHeader = () => {
 
-
+ 
   return (
-    <header>
+    <header className={styles.header}>
       <Link href="/" className={styles.logo}>
         <Image src={logoImg.src} width={100} height={100} alt="A plate with food on it" />
         NextLevelFood
       </Link>
-      <nav>
+      <nav className={styles.nav}>
         <ul>
           <li>
             <Link href="/meals">Browse Meals</Link>
