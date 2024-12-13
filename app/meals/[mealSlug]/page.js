@@ -8,6 +8,8 @@ const MealDetailsPage = async({params}) => {
 
 const meal = getMeal(params.mealSlug);
 
+meal.instructions = meal.instructions.replace(/\n/g, "<br>");
+
 
   return (
     <>
